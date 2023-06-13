@@ -1,5 +1,6 @@
 
 import './App.css'
+import Appbar from './component/appbar/Appbar'
 import Inicio from './rutas/inicio/Inicio'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <>
+      <Appbar />
       <Inicio />
 
     </>

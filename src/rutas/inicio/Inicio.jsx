@@ -1,20 +1,21 @@
 import { Grid, Typography } from '@mui/material'
 import img from '../../assets/imagenes/doctor.jpg'
+import img3 from '../../assets/imagenes/img3.jpg'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 const Inicio = () => {
   return (
-     <Grid container>
+     <Grid container spacing={2} style={{padding:'2rem'}}>
       <Grid item md={12} xs={12} textAlign={'center'}  color={'magenta'} style={{margin:'5px'}}><Typography variant='h2'>Otorrinolaring&#243;logo en Monterrey</Typography></Grid>
-      <Grid item md={12} xs={12} style={{border:'solid 2px gray', borderRadius:'5px', margin:'auto'}}> 
+      <Grid item md={12} xs={12} style={{border:'solid 2px gray', borderRadius:'5px', margin:'2px'}}> 
         <p>El <strong>Dr. Jorge Treviño Garza</strong> es un <strong>Otorrinolaring&#243;logo en Monterrey</strong> que cuenta con especialidad 
         en Cirug&#237;a Pl&#225;stica Facial, es un m&#233;dico que constantemente se actualiza con el fin de 
         mejorar sus servicios a los pacientes. 
         </p>
       </Grid>
-      <Grid item md={6}  style={{border:'solid 2px gray', borderRadius:'5px',padding:'5px'}}>
+      <Grid item md={6}   style={{border:'solid 2px gray', borderRadius:'5px',padding:'5px'}}>
          <p>Servicios del <strong>Otorrinolaring&#243;logo en Monterrey</strong></p>
          <ul>
             <li>Consulta</li>
@@ -26,7 +27,12 @@ const Inicio = () => {
          </ul>
          <img src={img} alt="imagen" />
       </Grid>
-      <Grid item md={6}  style={{border:'solid 2px gray', borderRadius:'5px',padding:'7px'}}>
+      <Grid item md={6}  style={{display:'block',padding:'5px'}}>
+       
+         <img src={img3} alt="imagen" style={{width:'100%'}}/>
+      </Grid>
+      
+      <Grid item md={12}  style={{border:'solid 2px gray', borderRadius:'5px',padding:'7px', margin:'2px'}}>
         <p>
             Te mereces un alto nivel de atencion por parte de un </p> <h2 style={{color:'magenta'}}><strong>Otorrinolaring&#243;logo</strong></h2>
             <p> de vanguardia, por lo que el <strong>Dr. Jorge Treviño Garza</strong> especialista en padecimiento de los o&#237;dos.
